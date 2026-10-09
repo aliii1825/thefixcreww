@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sargodha Service FAQs | The Fix Crew</title>
+<link rel="stylesheet" href="social-links.css">
+<meta name="description" content="Frequently asked questions about booking The Fix Crew home services in Sargodha, including visits, pricing, warranties, and payments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F5F8FC;--panel:#FFF;--ink:#132043;--ink-soft:#5C6B8A;--blue:#2F6FED;--blue-deep:#1E4FC7;--line:#E3E9F5;box-sizing:border-box;}
+  *,*::before,*::after{box-sizing:inherit;}
+  html{scroll-behavior:smooth;scroll-padding-top:80px;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,sans-serif;line-height:1.6;}
+  h1,h2,.logo{font-family:Manrope,sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+  header{position:sticky;top:0;z-index:10;background:rgba(245,248,252,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;gap:20px;}
+  .logo img{display:block;height:38px;width:auto;max-width:220px;object-fit:contain;}
+  .navlinks{display:flex;align-items:center;gap:22px;font-size:14px;color:var(--ink-soft);}
+  .navlinks a{text-decoration:none;white-space:nowrap;}
+  .navlinks a:hover,.navlinks a[aria-current="page"]{color:var(--blue-deep);}
+  .navlinks .book-link{background:var(--blue);color:#fff;padding:9px 14px;border-radius:8px;font-weight:700;}
+  .navlinks .btn-whatsapp{background:#25D366;color:#fff;padding:9px 14px;border-radius:8px;font-weight:700;}
+  .navlinks .btn-whatsapp:hover{color:#fff;}
+  main{padding:64px 0 84px;}
+  .page-intro{max-width:780px;margin:0 auto 34px;text-align:center;}
+  .eyebrow{margin:0 0 10px;color:var(--blue-deep);font-size:13px;font-weight:800;}
+  h1{margin:0 0 12px;font-size:clamp(34px,5vw,48px);line-height:1.12;}
+  .page-intro p{margin:0;color:var(--ink-soft);font-size:16px;}
+  .faq-list{max-width:880px;margin:0 auto;border-top:1px solid var(--line);}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item summary{display:flex;align-items:flex-start;gap:16px;padding:21px 4px;cursor:pointer;list-style:none;font-family:Manrope,sans-serif;font-size:16px;font-weight:700;line-height:1.5;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-number{flex:0 0 32px;color:var(--blue);font-size:14px;font-weight:800;padding-top:2px;}
+  .faq-question{flex:1;}
+  .faq-toggle{flex:0 0 24px;color:var(--blue-deep);font-family:Inter,sans-serif;font-size:23px;font-weight:400;line-height:1.2;text-align:center;}
+  .faq-item[open] .faq-toggle{transform:rotate(45deg);}
+  .faq-answer{padding:0 44px 22px 52px;color:var(--ink-soft);font-size:15px;}
+  .faq-answer p{margin:0 0 12px;}
+  .faq-answer p:last-child{margin-bottom:0;}
+  .faq-answer ul{margin:0;padding-left:20px;}
+  .faq-answer li+li{margin-top:7px;}
+  .question-form{max-width:880px;margin:44px auto 0;padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(19,32,67,.06);}
+  .question-form h2{margin:0 0 8px;font-size:24px;line-height:1.25;}
+  .question-form-intro,.question-form-note{margin:0;color:var(--ink-soft);font-size:14px;}
+  .question-fields{display:grid;gap:16px;margin-top:22px;}
+  .question-fields label{display:grid;gap:6px;font-size:14px;font-weight:700;}
+  .question-fields input,.question-fields textarea{width:100%;padding:12px 14px;border:1px solid #C9D3E5;border-radius:8px;background:#fff;color:var(--ink);font:inherit;font-size:15px;}
+  .question-fields textarea{min-height:140px;resize:vertical;}
+  .question-fields input:focus,.question-fields textarea:focus{outline:3px solid rgba(47,111,237,.2);border-color:var(--blue);}
+  .question-submit{justify-self:start;padding:11px 18px;border:0;border-radius:8px;background:var(--blue);color:#fff;font:inherit;font-weight:700;cursor:pointer;}
+  .question-submit:hover{background:var(--blue-deep);}
+  .question-submit:disabled{opacity:.65;cursor:wait;}
+  .question-form-note{margin-top:14px;font-size:12px;}
+  .question-status{min-height:24px;margin:14px 0 0;font-size:14px;font-weight:600;}
+  .question-status[data-state="success"]{color:#167044;}
+  .question-status[data-state="error"]{color:#B42318;}
+  .form-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--ink-soft);font-size:14px;}
+  .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media(max-width:760px){.wrap{padding:0 16px;}.nav{align-items:flex-start;flex-direction:column;gap:12px;padding:12px 16px;}.navlinks{width:100%;flex-wrap:wrap;gap:10px 18px;font-size:13px;}main{padding:48px 0 64px;}.page-intro{text-align:left;margin-bottom:22px;}.faq-item summary{gap:10px;padding:18px 0;font-size:15px;}.faq-number{flex-basis:28px;}.faq-answer{padding:0 32px 20px 38px;font-size:14px;}.question-form{margin-top:32px;padding:20px;}.question-form h2{font-size:21px;}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.faq-toggle{transition:none;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav wrap">
+    <a class="logo" href="index.html" aria-label="The Fix Crew home"><img src="Logo%20with%20tag%20line.png" alt="The Fix Crew logo"></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">All Services</a>
+      <a href="faq.html" aria-current="page">FAQs</a>
+      <a class="book-link" href="book-appointment.html">Book a Fixer</a>
+      <a class="btn-whatsapp" href="https://wa.me/923097862739" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp The Fix Crew at 0309 7862739">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-intro">
+    <p class="eyebrow">SERVING SARGODHA</p>
+    <h1>Frequently asked questions</h1>
+    <p>The Fix Crew currently provides home services in Sargodha only. Here are answers to common questions about booking and service.</p>
+  </div>
+  <section class="faq-list" aria-label="Frequently asked questions">
+    <details class="faq-item">
+      <summary><span class="faq-number">01</span><span class="faq-question">How do I book a technician with The Fix Crew?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer">
+        <p>Choose whichever booking method works best for you:</p>
+        <ul>
+          <li><strong>Website:</strong> Submit the appointment form, then review and send the prefilled WhatsApp message.</li>
+          <li><strong>Questions:</strong> Use the <a href="#question-form">question form below</a> and we will reply by email.</li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/923097862739" target="_blank" rel="noopener noreferrer">Message us at 0309 7862739</a> with the service you need and your location.</li>
+          <li><strong>Phone:</strong> Call <a href="tel:+923097862739">0309 7862739</a> to speak with a representative and arrange a suitable appointment time.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">02</span><span class="faq-question">What can I expect when I book with The Fix Crew?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer">
+        <p>Our service is built around dependable technicians and clear communication. You can expect:</p>
+        <ul>
+          <li>Skilled, polite technicians who have completed background checks.</li>
+          <li>Arrival within the time window confirmed for your booking.</li>
+          <li>Clear communication throughout your service.</li>
+          <li>Customer support and follow-up after the service.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">03</span><span class="faq-question">How much is the inspection visit?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Please contact us for a quote for the on-site inspection and diagnosis. If you approve the estimate and proceed with the repair, the inspection fee is adjusted against your final bill.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">04</span><span class="faq-question">What hours can I book a service?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Our technicians and customer support are available <strong>9:00 AM to 9:00 PM, seven days a week</strong>, including Saturdays and Sundays. We prioritize emergency repair requests for dispatch.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">05</span><span class="faq-question">Which locations does The Fix Crew cover?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>We currently serve <strong>Sargodha only</strong>. Within the city, our service area includes locations such as Satellite Town, Cantt, University Road, Fatima Jinnah Colony, and the PAF Base vicinity. We do not currently provide services in other cities.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">06</span><span class="faq-question">Can I change or cancel my appointment?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Yes. You can reschedule or cancel at no charge any time before the technician has left for your address.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">07</span><span class="faq-question">What should I do if a repair needs follow-up?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>If something is wrong with a completed job, send the details through our <a href="#question-form">question form</a>. Our support team will review your concern and arrange a priority follow-up.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">08</span><span class="faq-question">Can I provide my own replacement parts?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer">
+        <p>Parts and materials are charged separately from labor. You can either:</p>
+        <ul>
+          <li>Provide the parts yourself, if you prefer.</li>
+          <li>Ask our technician to source genuine replacement parts from an authorized hardware supplier. The technician will provide the store receipt.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">09</span><span class="faq-question">How are technicians checked before a home visit?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Before a technician is dispatched, we verify their identity and CNIC, assess their practical technical skills, and provide customer etiquette training.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-number">10</span><span class="faq-question">How can I pay after the work is done?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+      <div class="faq-answer">
+        <p>After the service is complete and you are satisfied with the work, you can pay by:</p>
+        <ul>
+          <li>Cash on Delivery (COD)</li>
+          <li>JazzCash</li>
+          <li>EasyPaisa</li>
+          <li>Direct Online Bank Transfer</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+  <section class="question-form" id="question-form" aria-labelledby="question-form-title">
+    <h2 id="question-form-title">Have another question?</h2>
+    <p class="question-form-intro">Send us a message using the form below and we will reply to your email.</p>
+    <form id="questionForm" action="https://formsubmit.co/ajax/thefixcrewofficial@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New question from The Fix Crew website">
+      <label class="form-honeypot" aria-hidden="true">Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+      <div class="question-fields">
+        <label for="questionName">Your name
+          <input id="questionName" name="name" type="text" autocomplete="name" maxlength="120" required>
+        </label>
+        <label for="questionEmail">Email address
+          <input id="questionEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </label>
+        <label for="questionMessage">Your question
+          <textarea id="questionMessage" name="message" maxlength="5000" required></textarea>
+        </label>
+        <button class="question-submit" type="submit">Send question</button>
+      </div>
+      <p class="question-form-note">Your name, email and question will be sent via FormSubmit to The Fix Crew support so we can reply.</p>
+      <p class="question-status" id="questionStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 The Fix Crew. All rights reserved.</span><span>Sargodha</span><span>Call: <a href="tel:+923097862739">0309 7862739</a></span></div></footer>
+<script src="question-form.js" defer></script>
+<script src="social-links.js" defer></script>
+<script src="language.js" defer></script>
+</body>
+</html>
